@@ -2,50 +2,24 @@
 <html>
 <head>
   <title>glfx.js</title>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/glfx-js/glfx.js"></script>
   <script src="dist/webgl-distort.js"></script>
 </head>
 <body>
 
-  <img src="example.jpg" />
+  <img id="img" src="example.jpg" />
 
-<script>
-(function() {
-
-  var warpWebGl = function(id, matrix1, matrix2) {
-
-    // try to create a WebGL canvas (will fail if WebGL isn't supported)
-    try {
-        var canvas = fx.canvas();
-    } catch (e) {
-        alert(e);
-        return;
-    }
-
-    // convert the image to a texture
-    var image = document.getElementById(id);
-    var texture = canvas.texture(image);
-
-    canvas.draw(texture).perspective(matrix1, matrix2).update();
-
-    // replace the image with the canvas
-    image.parentNode.insertBefore(canvas, image);
-    image.parentNode.removeChild(image);
-
-    // replace the image
-    //image.src = canvas.toDataURL('image/png');
-
-  }
-
-  warpWebGl(
-    'img',
-    [175, 156,   496, 55,   161, 279,   504, 330], 
-    [188, 165,   496, 55,   161, 279,   504, 330]
-  )
-
-})();
-</script>
+  <script>
+    (function() {
+ 
+      warpWebGl(
+        'img',
+        [175, 156,   496, 55,   161, 279,   504, 330], 
+        [188, 165,   496, 55,   161, 279,   504, 330]
+      );
+ 
+    })();
+  </script>
 
 </body>
 </html>
