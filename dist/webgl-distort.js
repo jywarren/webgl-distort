@@ -36,28 +36,38 @@ warpWebGl = function(id, matrix1, matrix2, download) {
   }
 
   // convert the image to a texture
-  var image = document.getElementById(id);
-  var texture = canvas.texture(image);
+  var imageEl = document.getElementById(id);
 
-  canvas.draw(texture).perspective(matrix1, matrix2).update();
+  var image = new Image();
 
-  // replace the image with the canvas
-  // image.parentNode.insertBefore(canvas, image);
-  // image.parentNode.removeChild(image);
+  image.onload = function() {
 
-  if (download) {
+    var texture = canvas.texture(image);
+ 
+    canvas.draw(texture).perspective(matrix1, matrix2).update();
+ 
+    // replace the image with the canvas
+    // image.parentNode.insertBefore(canvas, image);
+    // image.parentNode.removeChild(image);
 
     var blob = dataURItoBlob(canvas.toDataURL('image/png'));
     var burl = window.URL.createObjectURL(blob);
-    window.open(burl);
+ 
+    if (download) {
+ 
+      window.open(burl);
+ 
+    } else { // replace the image
 
-  } else {
-  // replace the image
-//    image.src = canvas.toDataURL('image/png');
-//    window.location = canvas.toDataURL('image/png');
-    var blob = dataURItoBlob(canvas.toDataURL('image/png'));
-    var burl = window.URL.createObjectURL(blob);
-    image.src = burl;
+      // keep non-blob version in case we have to fall back:
+      // image.src = canvas.toDataURL('image/png');
+      // window.location = canvas.toDataURL('image/png');
+      imageEl.src = burl;
+
+    }
+
   }
+
+  image.src = imageEl.src;
 
 }
