@@ -7,13 +7,21 @@
 </head>
 <body>
 
-  <img id="img" src="example.jpg" />
+  <img id="img" src="example-1024.jpg" />
+
+  <img id="img2" src="example-2048.jpg" />
 
   <script>
     (function() {
  
       warpWebGl(
         'img',
+        [175, 156,   496, 55,   161, 279,   504, 330], 
+        [188, 165,   496, 55,   161, 279,   504, 330]
+      );
+
+      warpWebGl(
+        'img2',
         [175, 156,   496, 55,   161, 279,   504, 330], 
         [188, 165,   496, 55,   161, 279,   504, 330]
       );

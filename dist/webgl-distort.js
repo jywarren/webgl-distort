@@ -20,8 +20,12 @@ function dataURItoBlob(dataURI) {
     return new Blob([ia], {type:mimeString});
 }
 
+// gl.getParameter(gl.MAX_TEXTURE_SIZE); 
+// > 16384 on an acer chromebook
+// gl.getParameter(gl.MAX_RENDERBUFFER_SIZE);
+// > 16384 on an acer chromebook
 
-warpWebGl = function(id, matrix1, matrix2) {
+warpWebGl = function(id, matrix1, matrix2, download) {
 
   // try to create a WebGL canvas (will fail if WebGL isn't supported)
   try {
@@ -41,12 +45,19 @@ warpWebGl = function(id, matrix1, matrix2) {
   // image.parentNode.insertBefore(canvas, image);
   // image.parentNode.removeChild(image);
 
-  // replace the image
-  //image.src = canvas.toDataURL('image/png');
-  //window.location = canvas.toDataURL('image/png');
+  if (download) {
 
-  var blob = dataURItoBlob(canvas.toDataURL('image/png'));
-  var burl = window.URL.createObjectURL(blob);
-  window.open(burl);
+    var blob = dataURItoBlob(canvas.toDataURL('image/png'));
+    var burl = window.URL.createObjectURL(blob);
+    window.open(burl);
+
+  } else {
+  // replace the image
+//    image.src = canvas.toDataURL('image/png');
+//    window.location = canvas.toDataURL('image/png');
+    var blob = dataURItoBlob(canvas.toDataURL('image/png'));
+    var burl = window.URL.createObjectURL(blob);
+    image.src = burl;
+  }
 
 }
