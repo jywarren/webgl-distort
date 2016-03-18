@@ -1,0 +1,26 @@
+{
+  "name": "glfx-bower",
+  "version": "0.0.1",
+  "description": "This library provides realtime image effects using WebGL",
+  "main": "glfx.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "gx",
+    "opengl",
+    "canvas"
+  ],
+  "authors": [
+    "Evan Wallace"
+  ],
+  "license": "MIT",
+  "homepage": "http://evanw.github.io/glfx.js/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

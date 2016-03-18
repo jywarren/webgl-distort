@@ -1,0 +1,34 @@
+{
+  "name": "glfx-bower",
+  "description": "This library provides realtime image effects using WebGL",
+  "main": "glfx.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "gx",
+    "opengl",
+    "canvas"
+  ],
+  "authors": [
+    "Evan Wallace"
+  ],
+  "license": "MIT",
+  "homepage": "http://evanw.github.io/glfx.js/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "258f6e3a98",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "258f6e3a98855b7ef1f9de3d87c5cb42b88fab29"
+  },
+  "_source": "https://github.com/polarity/glfx-bower.git",
+  "_target": "*",
+  "_originalSource": "git+https://github.com/polarity/glfx-bower.git"
+}
