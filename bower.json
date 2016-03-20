@@ -22,6 +22,6 @@
   "author": "Jeff Warren",
   "license": "MIT",
   "dependencies": {
-    "glfx-js": "git+https://github.com/polarity/glfx-bower.git"
+    "glfx-js": "git+https://github.com/jywarren/glfx.js.git"
   }
 }
