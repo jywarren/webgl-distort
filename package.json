@@ -1,0 +1,24 @@
+{
+  "name": "webgl-distort",
+  "version": "0.0.1",
+  "description": "WebGL-based image distortion library for perspectival/projective transforms, useful in aerial imagery processing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jywarren/webgl-distort.git"
+  },
+  "keywords": [
+    "distortion",
+    "perspective",
+    "webgl",
+    "maps"
+  ],
+  "author": "Jeff Warren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jywarren/webgl-distort/issues"
+  },
+  "homepage": "https://github.com/jywarren/webgl-distort",
+  "devDependencies": {
+    "glfx-js": "git+https://github.com/jywarren/glfx.js.git",
+  }
+}
