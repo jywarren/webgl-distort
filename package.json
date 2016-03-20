@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/jywarren/webgl-distort",
   "devDependencies": {
-    "glfx-js": "git+https://github.com/jywarren/glfx.js.git",
+    "glfx-js": "git+https://github.com/jywarren/glfx.js.git"
   }
 }
