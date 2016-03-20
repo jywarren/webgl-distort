@@ -1,7 +1,8 @@
 {
-  "name": "glfx-bower",
-  "description": "This library provides realtime image effects using WebGL",
-  "main": "glfx.js",
+  "name": "glfx",
+  "version": "0.0.1",
+  "description": "An image effects library for JavaScript using WebGL",
+  "main": "dist/glfx.js",
   "moduleType": [
     "globals"
   ],
@@ -22,13 +23,13 @@
     "test",
     "tests"
   ],
-  "_release": "258f6e3a98",
+  "_release": "0.0.1",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
-    "commit": "258f6e3a98855b7ef1f9de3d87c5cb42b88fab29"
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "07a117c2b7c75a8556d7338108c0976d110c11a2"
   },
-  "_source": "https://github.com/polarity/glfx-bower.git",
+  "_source": "https://github.com/jywarren/glfx.js.git",
   "_target": "*",
-  "_originalSource": "git+https://github.com/polarity/glfx-bower.git"
+  "_originalSource": "git+https://github.com/jywarren/glfx.js.git"
 }

@@ -1,8 +1,8 @@
 {
-  "name": "glfx-bower",
+  "name": "glfx",
   "version": "0.0.1",
-  "description": "This library provides realtime image effects using WebGL",
-  "main": "glfx.js",
+  "description": "An image effects library for JavaScript using WebGL",
+  "main": "dist/glfx.js",
   "moduleType": [
     "globals"
   ],
