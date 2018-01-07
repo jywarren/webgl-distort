@@ -1,7 +1,7 @@
 webgl-distort
 ====
 
-A prototype, demonstration project to test full-resolution perspective transforms done in-browser on the client side using WebGL. This would be useful for [MapKnitter](https://mapknitter.org) (https://github.com/publiclab/mapknitter) or its interface core library, [Leaflet.DistortableImage](https://github.com/publiclab/DistortableImage), where users could individually download their distorted images at full resolution for print or other uses. 
+A prototype, demonstration project to test full-resolution perspective transforms done in-browser on the client side using WebGL. This would be useful for [MapKnitter](https://mapknitter.org) (https://github.com/publiclab/mapknitter) or its interface core library, [Leaflet.DistortableImage](https://github.com/publiclab/Leaflet.DistortableImage), where users could individually download their distorted images at full resolution for print or other uses. 
 
 Try this out in the demo at https://jywarren.github.io/webgl-distort
 
