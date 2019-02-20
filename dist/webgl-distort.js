@@ -42,6 +42,8 @@ function warpWebGl(id, matrix1, matrix2, download) {
 
   var image = new Image();
 
+  image.setAttribute('crossorigin', 'anonymous');
+
   image.onload = function() {
 
     var texture = canvas.texture(image);
