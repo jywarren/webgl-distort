@@ -5,6 +5,8 @@ A prototype, demonstration project to test full-resolution perspective transform
 
 Try this out in the demo at https://jywarren.github.io/webgl-distort
 
+Or try the full featured lens distortion tool at https://github.com/jywarren/fisheyegl, based on this code.
+
 Eventually, it could be packaged as a bower-installable library which simply accepts an image URL and a begin and end matrix, and initiates a download (so as not to cause the browser to render the large dataURL).
 
 This makes use of the [glfx.js](https://github.com/evanw/glfx.js) library. 
